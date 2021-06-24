@@ -35,10 +35,3 @@ func TestStartServer(t *testing.T) {
 		t.Fatalf("http statusCode not 200")
 	}
 }
-
-func handleError(t *testing.T, err error) {
-	t.Helper()
-	if err != nil {
-		t.Fatal("failed", err)
-	}
-}
